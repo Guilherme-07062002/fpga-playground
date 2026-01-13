@@ -8,7 +8,7 @@ module tb_alu;
     // The "wire" keyword is used for signals that are driven by the DUT (Device Under Test)
     // This means we cannot assign values to them in the testbench
     // They will get their values from the ALU module
-    wire [3:0] result;
+    wire [4:0] result;
 
     // Instantiate our ALU module (DUT - Device Under Test)
     // We connect the signals defined above to the ALU ports

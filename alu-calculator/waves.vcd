@@ -1,5 +1,5 @@
 $date
-	Tue Jan 13 16:03:13 2026
+	Tue Jan 13 16:07:51 2026
 $end
 $version
 	Icarus Verilog
@@ -8,7 +8,7 @@ $timescale
 	1s
 $end
 $scope module tb_alu $end
-$var wire 4 ! result [3:0] $end
+$var wire 5 ! result [4:0] $end
 $var reg 4 " A [3:0] $end
 $var reg 4 # B [3:0] $end
 $var reg 3 $ operation [2:0] $end
