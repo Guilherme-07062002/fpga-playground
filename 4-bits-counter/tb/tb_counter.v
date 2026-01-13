@@ -22,8 +22,8 @@ module tb_counter;
 
     // 2. Test script
     initial begin
-        // Configuração para gerar o arquivo de ondas para o GTKWave
-        $dumpfile("waves.vcd"); // Output file name
+        // Configure waveform dump file location (write directly to build/)
+        $dumpfile("build/waves.vcd"); // Output file name
         $dumpvars(0, tb_counter); // Save all variables from this module
 
         // Test scenario

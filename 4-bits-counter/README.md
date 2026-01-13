@@ -22,20 +22,20 @@ Access the folder where the files are located:
 cd 4-bits-counter
 ```
 
-Compile the Verilog files:
+Compile the Verilog files into `build/`:
 
 ```bash
-iverilog -o simulation counter.v tb_counter.v
+iverilog -o build/simulation rtl/counter.v tb/tb_counter.v
 ```
 
 Run the simulation:
 
 ```bash
-vvp simulation
+vvp build/simulation
 ```
 
 View the waveform (if using a waveform viewer like GTKWave):
 
 ```bash
-gtkwave waves.vcd
+gtkwave build/waves.vcd
 ```
