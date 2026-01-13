@@ -43,42 +43,42 @@ module tb_alu;
         // The "display" command prints to the console
         // We print the inputs and the result
         // "%d" formats the number as decimal
-        $display("A=%d, B=%d, operation=ADD, result=%d", A, B, result);
+        $display("A=%d, B=%d, operation=ADD, result=%d (Signed=%d)", A, B, result, $signed(result));
 
         // Testing subtraction
         operation = 3'b001; // Subtraction
         #10;
-        $display("A=%d, B=%d, operation=SUB, result=%d", A, B, result);
+        $display("A=%d, B=%d, operation=SUB, result=%d (Signed=%d)", A, B, result, $signed(result));
 
         // Testing AND
         operation = 3'b010; // AND
         #10;
-        $display("A=%d, B=%d, operation=AND, result=%d", A, B, result);
+        $display("A=%d, B=%d, operation=AND, result=%d (Signed=%d)", A, B, result, $signed(result));
 
         // Testing OR
         operation = 3'b011; // OR
         #10;
-        $display("A=%d, B=%d, operation=OR, result=%d", A, B, result);
+        $display("A=%d, B=%d, operation=OR, result=%d (Signed=%d)", A, B, result, $signed(result));
 
         // Testing XOR
         operation = 3'b100; // XOR
         #10;
-        $display("A=%d, B=%d, operation=XOR, result=%d", A, B, result);
+        $display("A=%d, B=%d, operation=XOR, result=%d (Signed=%d)", A, B, result, $signed(result));
 
         // Testing NOT A
         operation = 3'b101; // NOT A
         #10;
-        $display("A=%d, operation=NOT A, result=%d", A, result);
+        $display("A=%d, operation=NOT A, result=%d (Signed=%d)", A, result, $signed(result));
 
         // Testing Less than
         operation = 3'b110; // Less than
         #10;
-        $display("A=%d, B=%d, operation=LT, result=%d", A, B, result);
+        $display("A=%d, B=%d, operation=LT, result=%d (Signed=%d)", A, B, result, $signed(result));
 
         // Testing NOP
         operation = 3'b111; // NOP
         #10;
-        $display("A=%d, B=%d, operation=NOP, result=%d", A, B, result);
+        $display("A=%d, B=%d, operation=NOP, result=%d (Signed=%d)", A, B, result, $signed(result));
 
         $display("End of ALU simulation.");
         $finish; // End simulation
